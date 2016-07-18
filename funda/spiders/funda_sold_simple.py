@@ -4,9 +4,10 @@ from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from funda.items import FundaItem
 
-class FundaSpider(CrawlSpider):
 
-    name = "funda_spider"
+class FundaSoldSimpleSpider(CrawlSpider):
+
+    name = "funda_sold_simple"
     allowed_domains = ["funda.nl"]
 
     def __init__(self, place='amsterdam'):
@@ -17,7 +18,7 @@ class FundaSpider(CrawlSpider):
     def parse(self, response):
         links = self.le1.extract_links(response)
         for link in links:
-            if link.url.count('/') == 6 and link.url.endswith('/'):
+            if link.url.count('/') == 7 and link.url.endswith('/'):
                 item = FundaItem()
                 item['url'] = link.url
                 if re.search(r'/appartement-',link.url):

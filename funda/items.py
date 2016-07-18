@@ -11,3 +11,6 @@ class FundaItem(scrapy.Item):
     rooms = scrapy.Field()              # Number of rooms
     bedrooms = scrapy.Field()           # Number of bedrooms
     property_type = scrapy.Field()      # House or apartment
+    city = scrapy.Field()
+    posting_date = scrapy.Field()
+    sale_date = scrapy.Field()
