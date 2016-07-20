@@ -1,4 +1,4 @@
-# Spatial mapping of property attributes
+# Mapping of real estate attributes
 The scraped data can be analyzed to yield some interesting results. By applying geolocation to the addresses, attributes such as price per unit area can be mapped (Figure 1).
 
 ![Heat map of property price per unit area](/Results/Images/OpenHeatMap_map_only.png)
