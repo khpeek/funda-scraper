@@ -7,7 +7,7 @@ There are two spiders:
 1. `funda_spider` scrapes all properties for sale in a certain city, such as [http://www.funda.nl/koop/amsterdam/](http://www.funda.nl/koop/amsterdam/),
 2. `funda_spider_sold` scrapes data on properties which have recently been sold, such as those listed on [http://www.funda.nl/koop/verkocht/amsterdam/](http://www.funda.nl/koop/verkocht/amsterdam/).
 
-After installing [Scrapy](www.scrapy.org), in the project directory simply run the command
+After installing [Scrapy](https://scrapy.org/), in the project directory simply run the command
 
 `scrapy crawl funda_spider -a place=amsterdam -o amsterdam_for_sale.json`
 
