@@ -1,3 +1,5 @@
+# Funda is protecting itself from scraping. Therefore, all responses return HTTP code 405.
+
 # funda-scraper
 Scraper of the Dutch real estate website [Funda.nl](http://www.funda.nl/), written in Python Scrapy.
 
