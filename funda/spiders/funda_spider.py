@@ -48,7 +48,7 @@ class FundaSpider(Spider):
         new_item['area'] = area
         new_item['bedrooms'] = bedrooms
         new_item['city'] = city
-        yield 
+        yield new_item
     
 
     def constructionYear(self, response):
